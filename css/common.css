@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+p
+{
+    font-family: "abc","굴림",sans-serif;
+}
+body
+{
+    font-family: "Noto Sans KR", "맑은 고딕", sans-serif ;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: aqua;
+    font-size: 1.5em;
+}
+
+h1
+{
+    text-align: center;
+}
+
+#member
+{
+    text-align: center;
+}
+
+#para1
+{
+    color: rgba(0,0,255,0.5); /* 그 부분의 대표색이다 */
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+    border: 5px solid;
+    text-align: center;
+}
+#para1:hover
+{
+    color: green;
+}
+
+#para2
+{
+    color: rgb(255,100,100);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 1.5em;
+    letter-spacing: -0.018em; /* 자간조절 */
+    text-indent: 50x;
+    margin-left: 50px;
+}
+
+#para3
+{
+    color: rgba(255,0,0,0.5);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+    border: 10px solid blue;
+    
+}
+
+#box1
+{
+    color: white;
+    background-color: #FF7788;
+    padding: 20px;
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#box2
+{
+    color: #557799;
+    background-color: #00DD22;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#box3
+{
+    color: #FF8833;
+    background-color: #1155CC;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+#box4
+{   
+    background-color: #FF9955;
+    text-align: center;
+}
+
+iframe
+{
+    width: 50vw;
+    height: 50vh;
+}
+
+#box5
+{
+    width: 300px;
+    height: 180px;
+    background-color: #DD8855;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    line-height: 180px;
+    
+}
+
+#box6
+{
+    border: 2px solid blue;
+    padding: 30px;
+    
+}
+
+#box8
+{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+    text-align: center;
+    line-height: 150px;
+    margin : auto;
+}
+
+#box9
+{
+    width: 50vw;
+    height: 50vh;
+    background-color: hotpink;
+    white-space: nowrap;
+    position: relative;
+    left: 50px;
+}
+
+#box10
+{
+    margin: 50px 50px 50px 50px;
+}
+
+#list1
+{
+    list-style-type: none;
+}
+
+#list1 li
+{
+    text-indent: -0.6em;
+}
+
+#list1 li::before
+{
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(100,100,255);
+}
+
+.board
+{
+    list-style-type: none;
+    width: 100%;
+    margin: 50px 50px 50px 50px;
+}
+
+.board li
+{
+ overflow: auto;
+}
+
+.board li .no,
+.board li .title,
+.board li .writer,
+.board li .date,
+.board li .count
+{
+    float: left;
+}
+
+.board li .no{width: 3em;}
+.board li .title{width: calc(100% - 18em);}
+.board li .writer{width: 5em;}
+.board li .date{width: 6em;}
+.board li .count{width: 4em;}
+
+.title, .writer
+{
+    white-space: nowrap; /* 아랫줄로 내려가지 않게 하는 코드 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
